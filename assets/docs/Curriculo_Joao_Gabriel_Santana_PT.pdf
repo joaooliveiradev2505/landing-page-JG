@@ -1,0 +1,123 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 6510 >>
+stream
+BT /F2 15 Tf 42 800 Td (JOÃO GABRIEL SANTANA DE OLIVEIRA) Tj ET
+BT /F2 10 Tf 42 784 Td (Desenvolvedor Full-Stack \(PHP Laravel | Java Spring Boot | React.js | Python\)) Tj ET
+BT /F1 9 Tf 42 771 Td (Santo André, SP - Brasil  |  Tel: +55 \(11\) 98855-5937  |  E-mail: joaooliveiradev.2505@gmail.com) Tj ET
+BT /F1 9 Tf 42 759 Td (LinkedIn: linkedin.com/in/joao-gabriel-santana-de-oliveira-273a2a220  |  GitHub: github.com/joaooliveiradev2505) Tj ET
+BT /F2 11 Tf 42 743 Td (RESUMO PROFISSIONAL) Tj ET
+BT /F1 9 Tf 42 729 Td (Desenvolvedor Full-Stack graduando em Análise e Desenvolvimento de Sistemas \(FIAP\), com sólida) Tj ET
+BT /F1 9 Tf 42 718 Td (base analítica proveniente de 4 anos de formação em Engenharia de Computação. Experiência) Tj ET
+BT /F1 9 Tf 42 707 Td (prática no desenvolvimento, manutenção evolutiva e arquitetura de sistemas corporativos de) Tj ET
+BT /F1 9 Tf 42 696 Td (grande porte \(ERP/CRM e plataformas clínicas\), além da construção de aplicações Full-Stack no) Tj ET
+BT /F1 9 Tf 42 685 Td (ecossistema PHP \(Laravel / Eloquent\), Java \(Spring Boot\), React.js e Python. Domínio no) Tj ET
+BT /F1 9 Tf 42 674 Td (desenvolvimento e integração de APIs RESTful, microsserviços de IA de Voz \(Vapi, LiveKit, OpenAI) Tj ET
+BT /F1 9 Tf 42 663 Td (API\), automação de mensageria \(WhatsApp Business API, RCS\) e modelagem/otimização de bancos de) Tj ET
+BT /F1 9 Tf 42 652 Td (dados relacionais \(MySQL e Oracle Database\). Habilidade comprovada para atuar em ambientes) Tj ET
+BT /F1 9 Tf 42 641 Td (corporativos de alta criticidade, seguindo diretrizes de TI/Compliance e colaborando com times) Tj ET
+BT /F1 9 Tf 42 630 Td (internacionais. Inglês avançado/fluente.) Tj ET
+BT /F2 11 Tf 42 611 Td (PRINCIPAIS COMPETÊNCIAS TÉCNICAS) Tj ET
+BT /F1 9 Tf 48 597 Td (- Linguagens & Frameworks: PHP \(Laravel / Eloquent ORM\), Java 21 \(Spring Boot, Spring Data JPA) Tj ET
+BT /F1 9 Tf 56 586 Td (/ Hibernate\), JavaScript \(ES6+, React.js, jQuery\), Python, Node.js, HTML5, CSS3, Bootstrap 5.) Tj ET
+BT /F1 9 Tf 48 573 Td (- Bancos de Dados & Performance: MySQL e Oracle Database \(modelagem relacional, arquiteturas) Tj ET
+BT /F1 9 Tf 56 562 Td (multi-database e múltiplos schemas, migrations, dirty checking, processamento em chunks e) Tj ET
+BT /F1 9 Tf 56 551 Td (otimização de queries SQL\).) Tj ET
+BT /F1 9 Tf 48 538 Td (- APIs, Segurança & Integrações: APIs RESTful, OpenAPI/Swagger, Autenticação Stateless \(Bearer) Tj ET
+BT /F1 9 Tf 56 527 Td (Token\) e Criptografia \(BCrypt\), Webhooks, OpenAI API, Agentes de Voz \(Vapi, LiveKit\), WhatsApp) Tj ET
+BT /F1 9 Tf 56 516 Td (Business API \(Dialog360/Meta\), RCS/SMS \(Unipix\) e Discadores Automáticos \(Olos / Voll\).) Tj ET
+BT /F1 9 Tf 48 503 Td (- Qualidade, DevOps & Cloud: Testes Unitários Automatizados \(JUnit 5, Mockito\), Git/GitHub, AWS) Tj ET
+BT /F1 9 Tf 56 492 Td (S3, Maven, Vite, Laravel Artisan / Cron Jobs, Linux.) Tj ET
+BT /F1 9 Tf 48 479 Td (- Automação & Engenharia: RPA \(Python, VBA\), Programação Orientada a Objetos \(POO\), Arquitetura) Tj ET
+BT /F1 9 Tf 56 468 Td (em Camadas, Análise de Requisitos e Scrum.) Tj ET
+BT /F2 11 Tf 42 451 Td (EXPERIÊNCIA PROFISSIONAL) Tj ET
+BT /F2 9 Tf 42 437 Td (Pés Sem Dor - Desenvolvedor Full-Stack \(PHP / Laravel\) | 2025 - 2026) Tj ET
+BT /F1 9 Tf 48 423 Td (- Arquitetura & Sistemas Corporativos: Atuação no desenvolvimento e manutenção evolutiva do) Tj ET
+BT /F1 9 Tf 56 412 Td (ERP/CRM proprietário e da plataforma de avaliação clínica em arquitetura multi-database) Tj ET
+BT /F1 9 Tf 56 401 Td (utilizando PHP \(Laravel\), MySQL, JavaScript/jQuery e Bootstrap.) Tj ET
+BT /F1 9 Tf 48 388 Td (- Integrações com IA & Agentes de Voz: Construção de integrações via Webhooks e APIs RESTful) Tj ET
+BT /F1 9 Tf 56 377 Td (com plataformas de voz baseadas em IA \(Vapi, LiveKit\) e OpenAI API, estruturando tratamento de) Tj ET
+BT /F1 9 Tf 56 366 Td (payloads dinâmicos, rotinas de fallback e relatórios analíticos de chamadas.) Tj ET
+BT /F1 9 Tf 48 353 Td (- Automação de Mensageria & CRM: Implementação de integrações com WhatsApp Business API e) Tj ET
+BT /F1 9 Tf 56 342 Td (webservices RCS/SMS, criando rotinas agendadas \(Laravel Artisan/Cron\) para sincronização de) Tj ET
+BT /F1 9 Tf 56 331 Td (status de templates HSM e geração automatizada de leads para o CRM.) Tj ET
+BT /F1 9 Tf 48 318 Td (- Integração de Discadores & Pipelines de Vendas: Evolução do pipeline de distribuição de leads) Tj ET
+BT /F1 9 Tf 56 307 Td (integrando Chatbot, CRM e discadores automáticos \(Olos/Voll\), aplicando modelagem relacional) Tj ET
+BT /F1 9 Tf 56 296 Td (\(1:N\) e filtros avançados.) Tj ET
+BT /F1 9 Tf 48 283 Td (- Otimização & Performance de Dados: Redução de consumo de memória e operações de escrita em) Tj ET
+BT /F1 9 Tf 56 272 Td (banco de dados por meio do processamento de grandes volumes em lotes \(chunks\), aplicação de) Tj ET
+BT /F1 9 Tf 56 261 Td (dirty checking e criação de migrations seguras.) Tj ET
+BT /F1 9 Tf 48 248 Td (- Dashboards, BI & Módulos Operacionais: Desenvolvimento de módulos para gestão de) Tj ET
+BT /F1 9 Tf 56 237 Td (disponibilidade de agenda integrada ao AWS S3, relatórios gerenciais/KPIs automatizados e) Tj ET
+BT /F1 9 Tf 56 226 Td (evolução do módulo clínico de vetorização/desenho de palmilhas.) Tj ET
+BT /F2 9 Tf 42 213 Td (KOSTAL Brasil - Assistente SAP SD / Desenvolvedor de Soluções & RPA | Outubro de 2023 -) Tj ET
+BT /F2 9 Tf 42 201 Td (Março de 2025) Tj ET
+BT /F1 9 Tf 48 187 Td (- Engenharia de Soluções & RPA em Ambiente Restrito: Projetei e implementei automações de) Tj ET
+BT /F1 9 Tf 56 176 Td (processos \(RPA\) para as divisões de Financeiro, Controladoria, RH, Qualidade e Produção,) Tj ET
+BT /F1 9 Tf 56 165 Td (desenvolvendo soluções em Python, VBA e infraestrutura nativa em conformidade com normas) Tj ET
+BT /F1 9 Tf 56 154 Td (globais de segurança da informação e compliance de TI.) Tj ET
+BT /F1 9 Tf 48 141 Td (- Rollout Internacional SAP PM: Colaborei no projeto de rollout global do módulo SAP PM junto à) Tj ET
+BT /F1 9 Tf 56 130 Td (matriz na Alemanha, atuando no levantamento de requisitos técnicos, migração e validação de) Tj ET
+BT /F1 9 Tf 56 119 Td (dados de ativos industriais.) Tj ET
+BT /F2 9 Tf 42 106 Td (KOSTAL Brasil - Estagiário de TI | Fevereiro de 2023 - Outubro de 2023) Tj ET
+BT /F1 9 Tf 48 92 Td (- Suporte Técnico & Operações: Atendimento corporativo via Service Desk, monitoramento de) Tj ET
+BT /F1 9 Tf 56 81 Td (operações com EDI \(Electronic Data Interchange\) e suporte funcional ao ecossistema SAP.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 1665 >>
+stream
+BT /F2 11 Tf 42 800 Td (PROJETOS EM DESTAQUE) Tj ET
+BT /F2 9 Tf 42 786 Td (Fintech Opportunity \(The Opportunity Ledger\) - Plataforma Full-Stack & IA |) Tj ET
+BT /F2 9 Tf 42 774 Td (github.com/joaooliveiradev2505/FintechFiap) Tj ET
+BT /F1 9 Tf 48 760 Td (- Arquitetura Backend & Persistência Oracle: API RESTful em Java 21 e Spring Boot \(26 endpoints) Tj ET
+BT /F1 9 Tf 56 749 Td (documentados via Swagger/OpenAPI\) integrada ao Oracle Database via Spring Data JPA/Hibernate,) Tj ET
+BT /F1 9 Tf 56 738 Td (com autenticação stateless, BCrypt e controle transacional.) Tj ET
+BT /F1 9 Tf 48 725 Td (- Motor de Custo de Oportunidade & IA \(Java + Python\): Algoritmos financeiros de Orçamento) Tj ET
+BT /F1 9 Tf 56 714 Td (Reverso, projeção de juros compostos em tempo real e consultor preditivo de saúde financeira em) Tj ET
+BT /F1 9 Tf 56 703 Td (Python, validados com JUnit 5 e Mockito.) Tj ET
+BT /F1 9 Tf 48 690 Td (- Frontend Responsivo \(React 19 + Bootstrap 5\): SPA responsiva \(Mobile/Desktop\) com componentes) Tj ET
+BT /F1 9 Tf 56 679 Td (interativos drag-and-drop e assistente virtual integrado.) Tj ET
+BT /F2 11 Tf 42 662 Td (FORMAÇÃO ACADÊMICA & IDIOMAS) Tj ET
+BT /F1 9 Tf 48 648 Td (- Tecnólogo \(CST\) em Análise e Desenvolvimento de Sistemas: FIAP \(2026 - 2028\)) Tj ET
+BT /F1 9 Tf 48 635 Td (- Bacharelado em Engenharia de Computação \(4 anos cursados\): Universidade Anhembi Morumbi /) Tj ET
+BT /F1 9 Tf 56 624 Td (Fundação Santo André \(2021 - 2025\)) Tj ET
+BT /F1 9 Tf 48 611 Td (- Idiomas: Inglês Avançado / Fluente \(Comunicação técnica e condução de projetos com times) Tj ET
+BT /F1 9 Tf 56 600 Td (internacionais\) | Português Nativo.) Tj ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000000462 00000 n 
+0000007024 00000 n 
+0000007160 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+8877
+%%EOF
