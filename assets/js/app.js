@@ -54,6 +54,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Suporte a GitHub Pages (index.html estático): lê ?mode=recruiter ou ?mode=business na inicialização
+    const initialParams = new URLSearchParams(window.location.search);
+    const urlMode = (initialParams.get('mode') || '').toLowerCase();
+    if (urlMode === 'recruiter' || urlMode === 'business') {
+        setMode(urlMode, false);
+    }
+
+    // Suporte a download de vCard (.vcf) via client-side quando hospedado no GitHub Pages
+    document.querySelectorAll('a[href="?download=vcard"]').forEach((vcardLink) => {
+        vcardLink.addEventListener('click', (e) => {
+            if (window.location.hostname.endsWith('github.io') || window.location.pathname.endsWith('.html')) {
+                e.preventDefault();
+                const vcardContent = [
+                    'BEGIN:VCARD',
+                    'VERSION:3.0',
+                    'N:Oliveira;João Gabriel;Santana de;;',
+                    'FN:João Gabriel Santana de Oliveira',
+                    'TITLE:Desenvolvedor Full-Stack & Consultor de Automação/IA',
+                    'TEL;TYPE=CELL,VOICE:+5511988555937',
+                    'EMAIL;TYPE=INTERNET,PREF:' + (body.dataset.email || 'joaooliveiradev.2505@gmail.com'),
+                    'ADR;TYPE=WORK:;;Santo André;SP;;Brasil',
+                    'NOTE:Soluções em Sistemas Web, Automação de Processos (RPA) e Atendimento com IA no WhatsApp.',
+                    'END:VCARD',
+                ].join('\r\n');
+                const blob = new Blob([vcardContent], { type: 'text/vcard;charset=utf-8' });
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = 'Joao_Gabriel_Oliveira.vcf';
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            }
+        });
+    });
+
     // Formulário de Pré-Orçamento Rápido (30s) -> Envia para endpoint PHP e abre WhatsApp
     const quickQuoteForm = document.getElementById('quickQuoteForm');
     if (quickQuoteForm) {

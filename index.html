@@ -1,0 +1,989 @@
+﻿
+Warning: Undefined array key "REQUEST_METHOD" in C:\Users\jhon_\Documents\Projetos\portfolio-lp\index.php on line 30
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Gabriel | Soluções em Software, IA & Portfólio Full-Stack</title>
+    <meta name="description" content="Ajudo clínicas, escritórios, comércios e empresas do ABC a venderem mais, automatizarem o atendimento no WhatsApp com Inteligência Artificial e eliminarem tarefas manuais repetitivas em planilhas e sistemas.">
+    <meta name="theme-color" content="#F8FAFC">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom Light & Friendly Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-active-mode="business"
+      data-wa-number="5511988555937"
+      data-email="joaooliveiradev.2505@gmail.com">
+
+    <!-- Top Navbar -->
+    <header class="navbar-light-glass sticky-top">
+        <div class="container py-2 d-flex align-items-center justify-content-between flex-wrap gap-2">
+            <a href="?" class="brand-logo text-decoration-none d-flex align-items-center gap-2">
+                <span class="brand-avatar">JG</span>
+                <div>
+                    <span class="fw-bold text-slate-900 d-block lh-1">João Gabriel</span>
+                    <small class="text-slate-500" style="font-size: 0.75rem;">Santo André • ABC / SP</small>
+                </div>
+            </a>
+
+            <!-- Seletor Híbrido Principal (Empresas vs Recrutadores) -->
+            <div class="mode-switcher" role="tablist" aria-label="Alternar visão da página">
+                <button type="button"
+                        class="mode-btn active"
+                        data-switch-mode="business">
+                    <i class="bi bi-briefcase-fill me-1"></i>
+                    <span>Para Empresas</span>
+                </button>
+                <button type="button"
+                        class="mode-btn "
+                        data-switch-mode="recruiter">
+                    <i class="bi bi-code-slash me-1"></i>
+                    <span>Para Recrutadores</span>
+                </button>
+            </div>
+
+            <!-- Botões Rápidos Direita -->
+            <div class="d-flex align-items-center gap-2">
+                <button type="button"
+                        class="btn btn-light-pill btn-sm d-flex align-items-center gap-1"
+                        data-bs-toggle="modal"
+                        data-bs-target="#qrCodeModal"
+                        title="Abrir QR Code da página">
+                    <i class="bi bi-qr-code text-primary"></i>
+                    <span class="d-none d-md-inline">QR Code</span>
+                </button>
+
+                <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Vi%20sua%20p%C3%A1gina%20e%20gostaria%20de%20conversar."
+                   target="_blank"
+                   rel="noopener"
+                   class="btn btn-whatsapp-nav btn-sm d-flex align-items-center gap-1">
+                    <i class="bi bi-whatsapp"></i>
+                    <span class="d-none d-sm-inline">WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =======================================================================
+         VISÃO 1: PARA EMPRESAS & NEGÓCIOS LOCAIS (FOCO COMERCIAL / RENDA EXTRA)
+         Regra de Contatos: Exibe apenas WhatsApp e E-mail (+ Salvar na Agenda)
+         ======================================================================= -->
+    <main id="view-business" class="mode-view is-visible">
+
+        <!-- Hero Comercial -->
+        <section class="hero-section py-5">
+            <div class="container py-lg-3">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-7">
+                        <div class="d-inline-flex align-items-center gap-2 badge-soft-blue mb-3">
+                            <span class="status-dot"></span>
+                            <span>Atendimento Rápido em Santo André, ABC & Remoto</span>
+                        </div>
+
+                        <h1 class="hero-title mb-3">
+                            Automatize seu atendimento, elimine planilhas manuais e <span class="text-gradient-blue">venda mais com tecnologia</span>.
+                        </h1>
+
+                        <p class="hero-subtitle mb-4">
+                            Ajudo clínicas, escritórios, comércios e empresas do ABC a venderem mais, automatizarem o atendimento no WhatsApp com Inteligência Artificial e eliminarem tarefas manuais repetitivas em planilhas e sistemas.                            Soluções práticas, sem mensalidades abusivas e entregues sob medida para a realidade do seu negócio.
+                        </p>
+
+                        <!-- CTAs Principais (Apenas WhatsApp, E-mail e Agenda conforme solicitado) -->
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Escaneei%20seu%20contato%20%2F%20vi%20sua%20p%C3%A1gina%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20minha%20empresa."
+                               target="_blank"
+                               rel="noopener"
+                               class="btn btn-whatsapp-lg shadow-sm">
+                                <i class="bi bi-whatsapp fs-5 me-2"></i>
+                                Chamar no WhatsApp Agora
+                            </a>
+
+                            <a href="?download=vcard" class="btn btn-outline-slate-lg">
+                                <i class="bi bi-person-plus-fill me-2 text-primary"></i>
+                                Salvar Contato na Agenda
+                            </a>
+                        </div>
+
+                        <!-- Faixa de Contatos Diretos (Somente WhatsApp e E-mail) -->
+                        <div class="contact-strip-light d-flex flex-wrap align-items-center gap-3">
+                            <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                               target="_blank"
+                               rel="noopener"
+                               class="contact-pill">
+                                <i class="bi bi-whatsapp text-success"></i>
+                                <span>+55 (11) 98855-5937</span>
+                            </a>
+                            <a href="mailto:joaooliveiradev.2505@gmail.com?subject=Or%C3%A7amento%20de%20Servi%C3%A7os%20-%20Tecnologia%20e%20Automa%C3%A7%C3%A3o"
+                               class="contact-pill">
+                                <i class="bi bi-envelope-fill text-primary"></i>
+                                <span>joaooliveiradev.2505@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card Lateral: Orçamento Rápido em 30 Segundos -->
+                    <div class="col-lg-5">
+                        <div class="card-clean-elevated p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div>
+                                    <span class="badge bg-primary-subtle text-primary fw-semibold mb-1">Orçamento sem compromisso</span>
+                                    <h2 class="h5 fw-bold text-slate-900 mb-0">Do que sua empresa precisa hoje?</h2>
+                                </div>
+                                <div class="icon-circle-soft">
+                                    <i class="bi bi-lightning-charge-fill text-primary fs-5"></i>
+                                </div>
+                            </div>
+
+                            <form id="quickQuoteForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="qName" class="form-label small fw-semibold text-slate-700">Seu nome</label>
+                                    <input type="text" class="form-control form-control-light" id="qName" placeholder="Ex: Carlos Silva" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="qCompany" class="form-label small fw-semibold text-slate-700">Empresa ou ramo (opcional)</label>
+                                    <input type="text" class="form-control form-control-light" id="qCompany" placeholder="Ex: Clínica Odontológica / Escritório / Loja">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="qService" class="form-label small fw-semibold text-slate-700">Qual solução você busca?</label>
+                                    <select class="form-select form-control-light" id="qService">
+                                        <option value="Atendimento Automático 24h (WhatsApp / IA)">🤖 Robô de Atendimento no WhatsApp / IA</option>
+                                        <option value="Automação de Planilhas e Processos (Python / Excel)">⚙️ Automação de Planilhas e Rotinas (Excel / RPA)</option>
+                                        <option value="Landing Page / Site Profissional">🚀 Criação de Landing Page / Site de Vendas</option>
+                                        <option value="Sistema Web Sob Medida / Integração CRM">💻 Sistema Web Sob Medida / Integração de Sistemas</option>
+                                        <option value="Consultoria Técnica / Outra necessidade">💡 Outro projeto ou dúvida</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="qDetails" class="form-label small fw-semibold text-slate-700">Resumo rápido (opcional)</label>
+                                    <textarea class="form-control form-control-light" id="qDetails" rows="2" placeholder="Conte em 1 frase o que você quer melhorar..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary-gradient w-100 py-2 fw-semibold">
+                                    <i class="bi bi-send-fill me-2"></i>
+                                    Enviar Pedido direto no WhatsApp
+                                </button>
+                                <p class="text-center text-slate-500 small mb-0 mt-2">
+                                    <i class="bi bi-clock me-1"></i> Resposta rápida direto comigo, sem intermediários.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Métricas de Impacto -->
+                <div class="row g-3 mt-4 pt-2">
+                                            <div class="col-6 col-md-3">
+                            <div class="metric-card-light p-3 h-100">
+                                <div class="metric-value">24/7</div>
+                                <div class="metric-label">Atendimento automático no WhatsApp &amp; Voz</div>
+                            </div>
+                        </div>
+                                            <div class="col-6 col-md-3">
+                            <div class="metric-card-light p-3 h-100">
+                                <div class="metric-value">-80%</div>
+                                <div class="metric-label">Redução de tempo em planilhas e rotinas manuais</div>
+                            </div>
+                        </div>
+                                            <div class="col-6 col-md-3">
+                            <div class="metric-card-light p-3 h-100">
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Soluções sob medida para o seu negócio no ABC</div>
+                            </div>
+                        </div>
+                                            <div class="col-6 col-md-3">
+                            <div class="metric-card-light p-3 h-100">
+                                <div class="metric-value">Rápido</div>
+                                <div class="metric-label">Entregas ágeis para gerar resultado ainda este mês</div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </section>
+
+        <!-- Catálogo de Soluções Práticas -->
+        <section class="py-5 bg-white border-top border-bottom">
+            <div class="container">
+                <div class="text-center max-w-700 mx-auto mb-5">
+                    <span class="section-eyebrow">Soluções Práticas para o seu Negócio</span>
+                    <h2 class="section-title mt-1">Como posso ajudar sua empresa a economizar tempo e faturar mais</h2>
+                    <p class="text-slate-600 mb-0">
+                        Experiência real construindo sistemas para grandes operações clínicas e industriais, agora acessível para empresas da nossa região.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                                            <div class="col-md-6">
+                            <div class="service-card-light h-100 d-flex flex-column justify-content-between p-4">
+                                <div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <span class="service-icon-box icon-primary">
+                                            <i class="bi bi-robot"></i>
+                                        </span>
+                                        <span class="badge-pill-soft">Alta Demanda • Clínicas &amp; Comércios</span>
+                                    </div>
+
+                                    <h3 class="h5 fw-bold text-slate-900 mb-2">Atendimento Automático 24h (WhatsApp &amp; Voz com IA)</h3>
+
+                                    <div class="problem-callout mb-3">
+                                        <i class="bi bi-question-circle-fill text-primary me-1"></i>
+                                        <span>Perdendo clientes porque demora para responder no WhatsApp ou fora do horário comercial?</span>
+                                    </div>
+
+                                    <p class="text-slate-600 small mb-3">
+                                        Implementação de assistentes inteligentes no WhatsApp Oficial e agentes de voz por telefone que respondem dúvidas, qualificam clientes, enviam catálogos e agendam horários automaticamente.                                    </p>
+
+                                    <ul class="list-unstyled service-checklist mb-4">
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Integração oficial com WhatsApp Business API, RCS/SMS e Chatbots</span>
+                                            </li>
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Agentes de voz com IA que atendem e confirmam agendamentos</span>
+                                            </li>
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Distribuição automática de clientes para sua equipe comercial ou CRM</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+                                <div class="pt-3 border-top d-flex align-items-center justify-content-between gap-2">
+                                    <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Vi%20sua%20p%C3%A1gina%20e%20gostaria%20de%20saber%20mais%20sobre%20Atendimento%20Autom%C3%A1tico%20no%20WhatsApp%20%2F%20IA%20para%20o%20meu%20neg%C3%B3cio."
+                                       target="_blank"
+                                       rel="noopener"
+                                       class="btn btn-outline-primary-clean btn-sm w-100 fw-semibold">
+                                        <i class="bi bi-whatsapp me-1"></i> Solicitar Orçamento desta Solução
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-6">
+                            <div class="service-card-light h-100 d-flex flex-column justify-content-between p-4">
+                                <div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <span class="service-icon-box icon-teal">
+                                            <i class="bi bi-gear-wide-connected"></i>
+                                        </span>
+                                        <span class="badge-pill-soft">Economia de Tempo • Financeiro &amp; Operação</span>
+                                    </div>
+
+                                    <h3 class="h5 fw-bold text-slate-900 mb-2">Automação de Planilhas, Relatórios e Rotinas (RPA)</h3>
+
+                                    <div class="problem-callout mb-3">
+                                        <i class="bi bi-question-circle-fill text-primary me-1"></i>
+                                        <span>Sua equipe gasta horas copiando dados entre planilhas, emitindo relatórios ou preenchendo sistemas?</span>
+                                    </div>
+
+                                    <p class="text-slate-600 small mb-3">
+                                        Transformo processos manuais demorados no Excel, ERP ou navegador em robôs automáticos (Python e VBA) que executam tudo em segundos, sem erros humanos.                                    </p>
+
+                                    <ul class="list-unstyled service-checklist mb-4">
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Automação avançada de planilhas Excel (VBA) e cruzamento de dados</span>
+                                            </li>
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Robôs em Python para conciliação financeira, RH, estoque e emissão de relatórios</span>
+                                            </li>
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Disparo automático de avisos, cobranças e acompanhamentos</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+                                <div class="pt-3 border-top d-flex align-items-center justify-content-between gap-2">
+                                    <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Vi%20sua%20p%C3%A1gina%20e%20preciso%20automatizar%20planilhas%2Fprocessos%20repetitivos%20na%20minha%20empresa."
+                                       target="_blank"
+                                       rel="noopener"
+                                       class="btn btn-outline-primary-clean btn-sm w-100 fw-semibold">
+                                        <i class="bi bi-whatsapp me-1"></i> Solicitar Orçamento desta Solução
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-6">
+                            <div class="service-card-light h-100 d-flex flex-column justify-content-between p-4">
+                                <div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <span class="service-icon-box icon-indigo">
+                                            <i class="bi bi-window-stack"></i>
+                                        </span>
+                                        <span class="badge-pill-soft">Sob Medida • Gestão &amp; Escala</span>
+                                    </div>
+
+                                    <h3 class="h5 fw-bold text-slate-900 mb-2">Sistemas Web, Painéis Gerenciais (BI) e Integrações</h3>
+
+                                    <div class="problem-callout mb-3">
+                                        <i class="bi bi-question-circle-fill text-primary me-1"></i>
+                                        <span>Seu sistema atual é travado, lento ou não conversa com as outras ferramentas da empresa?</span>
+                                    </div>
+
+                                    <p class="text-slate-600 small mb-3">
+                                        Desenvolvimento e evolução de sistemas de gestão (CRM/ERP), controle de agenda, dashboards de indicadores (KPIs) e integração entre plataformas via API.                                    </p>
+
+                                    <ul class="list-unstyled service-checklist mb-4">
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Sistemas web completos e seguros em PHP (Laravel), Java ou React</span>
+                                            </li>
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Painéis gerenciais claros para acompanhar vendas, agenda e produtividade</span>
+                                            </li>
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Integração entre site, sistema interno, banco de dados e telefonia</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+                                <div class="pt-3 border-top d-flex align-items-center justify-content-between gap-2">
+                                    <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Vi%20sua%20p%C3%A1gina%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20desenvolvimento%2Fevolu%C3%A7%C3%A3o%20de%20sistema%20web%20ou%20integra%C3%A7%C3%A3o."
+                                       target="_blank"
+                                       rel="noopener"
+                                       class="btn btn-outline-primary-clean btn-sm w-100 fw-semibold">
+                                        <i class="bi bi-whatsapp me-1"></i> Solicitar Orçamento desta Solução
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-6">
+                            <div class="service-card-light h-100 d-flex flex-column justify-content-between p-4">
+                                <div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <span class="service-icon-box icon-amber">
+                                            <i class="bi bi-rocket-takeoff"></i>
+                                        </span>
+                                        <span class="badge-pill-soft">Entrega Rápida • Vendas Fim de Ano</span>
+                                    </div>
+
+                                    <h3 class="h5 fw-bold text-slate-900 mb-2">Landing Pages Rápidas &amp; Páginas de Vendas</h3>
+
+                                    <div class="problem-callout mb-3">
+                                        <i class="bi bi-question-circle-fill text-primary me-1"></i>
+                                        <span>Precisa divulgar um serviço ou campanha de fim de ano com uma página profissional que converte?</span>
+                                    </div>
+
+                                    <p class="text-slate-600 small mb-3">
+                                        Criação de páginas modernas, ultra-rápidas no celular e otimizadas para transformar visitantes do Google e Instagram em chamadas diretas no seu WhatsApp.                                    </p>
+
+                                    <ul class="list-unstyled service-checklist mb-4">
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Design limpo, amigável e 100% pensado para celular (Mobile-First)</span>
+                                            </li>
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Botões estratégicos de conversão direta para o WhatsApp e QR Code próprio</span>
+                                            </li>
+                                                                                    <li>
+                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                <span>Pronta para campanhas no Google Ads, Meta Ads e cartão digital</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+                                <div class="pt-3 border-top d-flex align-items-center justify-content-between gap-2">
+                                    <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Vi%20sua%20p%C3%A1gina%20e%20quero%20fazer%20um%20or%C3%A7amento%20para%20uma%20Landing%20Page%20profissional%20para%20o%20meu%20neg%C3%B3cio."
+                                       target="_blank"
+                                       rel="noopener"
+                                       class="btn btn-outline-primary-clean btn-sm w-100 fw-semibold">
+                                        <i class="bi bi-whatsapp me-1"></i> Solicitar Orçamento desta Solução
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </section>
+
+        <!-- Como Funciona (3 Passos Simples) -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center max-w-700 mx-auto mb-5">
+                    <span class="section-eyebrow">Simples, Transparente e Sem Burocracia</span>
+                    <h2 class="section-title mt-1">Como funciona o nosso trabalho</h2>
+                </div>
+
+                <div class="row g-4">
+                                            <div class="col-md-4">
+                            <div class="step-card-light p-4 h-100">
+                                <span class="step-number">01</span>
+                                <h3 class="h5 fw-bold text-slate-900 mt-3 mb-2">Diagnóstico Rápido e Gratuito</h3>
+                                <p class="text-slate-600 small mb-0">Você me chama no WhatsApp, conta qual é o gargalo do seu negócio (atendimento, planilha ou site) e avaliamos a solução mais simples e econômica.</p>
+                            </div>
+                        </div>
+                                            <div class="col-md-4">
+                            <div class="step-card-light p-4 h-100">
+                                <span class="step-number">02</span>
+                                <h3 class="h5 fw-bold text-slate-900 mt-3 mb-2">Proposta Clara &amp; Prazo Fechado</h3>
+                                <p class="text-slate-600 small mb-0">Sem termos técnicos complicados: você recebe o escopo exato, valor justo e data de entrega definida antes de começarmos.</p>
+                            </div>
+                        </div>
+                                            <div class="col-md-4">
+                            <div class="step-card-light p-4 h-100">
+                                <span class="step-number">03</span>
+                                <h3 class="h5 fw-bold text-slate-900 mt-3 mb-2">Entrega Prática + Suporte Próximo</h3>
+                                <p class="text-slate-600 small mb-0">Desenvolvo, testo com você e entrego funcionando, com suporte direto em Santo André/ABC ou remoto.</p>
+                            </div>
+                        </div>
+                                    </div>
+
+                <!-- Banner Final de Contato Comercial (Apenas WhatsApp e E-mail) -->
+                <div class="cta-banner-light mt-5 p-4 p-lg-5">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-8">
+                            <span class="badge bg-white text-primary fw-semibold mb-2 shadow-xs">
+                                <i class="bi bi-geo-alt-fill me-1"></i> Santo André & Região do ABC
+                            </span>
+                            <h3 class="h3 fw-bold text-slate-900 mb-2">
+                                Vamos conversar sobre como destravar o crescimento do seu negócio?
+                            </h3>
+                            <p class="text-slate-600 mb-0">
+                                Me mande uma mensagem no WhatsApp ou e-mail. Explico tudo de forma simples e encontramos a melhor solução para o seu bolso.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <div class="d-grid gap-2">
+                                <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Vi%20sua%20p%C3%A1gina%20de%20servi%C3%A7os%20e%20gostaria%20de%20bater%20um%20papo%20sobre%20uma%20solu%C3%A7%C3%A3o%20para%20minha%20empresa."
+                                   target="_blank"
+                                   rel="noopener"
+                                   class="btn btn-whatsapp-lg">
+                                    <i class="bi bi-whatsapp me-2"></i>
+                                    +55 (11) 98855-5937                                </a>
+                                <a href="mailto:joaooliveiradev.2505@gmail.com?subject=Contato%20Comercial%20-%20Solu%C3%A7%C3%B5es%20em%20Tecnologia"
+                                   class="btn btn-light-border">
+                                    <i class="bi bi-envelope-fill text-primary me-2"></i>
+                                    joaooliveiradev.2505@gmail.com                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =======================================================================
+         VISÃO 2: PARA RECRUTADORES & TECH LEADS (PORTFÓLIO & CURRÍCULO COMPLETO)
+         Regra de Contatos: Exibe TODOS (WhatsApp, E-mail, LinkedIn, GitHub e PDF CV)
+         ======================================================================= -->
+    <main id="view-recruiter" class="mode-view d-none">
+
+        <!-- Hero Recrutador -->
+        <section class="hero-section py-5">
+            <div class="container py-lg-2">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <div class="d-inline-flex align-items-center gap-2 badge-soft-emerald mb-3">
+                            <span class="status-dot-green"></span>
+                            <span>Disponibilidade imediata (CLT / PJ • Presencial, Híbrido ou Remoto)</span>
+                        </div>
+
+                        <h1 class="hero-title mb-2">
+                            João Gabriel Santana de Oliveira                        </h1>
+                        <p class="h5 fw-semibold text-primary mb-3">
+                            Desenvolvedor Full-Stack (PHP Laravel | Java Spring Boot | React.js | Python)                        </p>
+
+                        <p class="text-slate-600 mb-4">
+                            Desenvolvedor Full-Stack graduando em Análise e Desenvolvimento de Sistemas (FIAP), com sólida base analítica proveniente de 4 anos de formação em Engenharia de Computação. Experiência prática no desenvolvimento, manutenção evolutiva e arquitetura de sistemas corporativos de grande porte (ERP/CRM e plataformas clínicas), além da construção de aplicações Full-Stack no ecossistema PHP (Laravel / Eloquent), Java 21 (Spring Boot), React.js e Python. Domínio em APIs RESTful, microsserviços de IA de Voz (Vapi, LiveKit, OpenAI API), automação de mensageria (WhatsApp Business API, RCS) e modelagem/otimização de bancos de dados relacionais (MySQL e Oracle Database). Inglês avançado/fluente.                        </p>
+
+                        <!-- Botões de Ação Completa para Recrutadores -->
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <a href="assets/docs/Curriculo_Joao_Gabriel_Santana_PT.pdf"
+                               download="Curriculo_Joao_Gabriel_Santana_PT.pdf"
+                               class="btn btn-primary-gradient">
+                                <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>
+                                Baixar Currículo (PDF)
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/joao-gabriel-santana-de-oliveira-273a2a220"
+                               target="_blank"
+                               rel="noopener"
+                               class="btn btn-outline-slate">
+                                <i class="bi bi-linkedin text-primary me-1"></i>
+                                LinkedIn
+                            </a>
+
+                            <a href="https://github.com/joaooliveiradev2505"
+                               target="_blank"
+                               rel="noopener"
+                               class="btn btn-outline-slate">
+                                <i class="bi bi-github me-1"></i>
+                                GitHub
+                            </a>
+
+                            <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%20Gabriel%21%20Vi%20seu%20portf%C3%B3lio%20t%C3%A9cnico%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%20Full-Stack."
+                               target="_blank"
+                               rel="noopener"
+                               class="btn btn-outline-slate">
+                                <i class="bi bi-whatsapp text-success me-1"></i>
+                                WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Todos os Contatos Visíveis para Recrutadores -->
+                        <div class="contact-strip-light d-flex flex-wrap align-items-center gap-3">
+                            <a href="mailto:joaooliveiradev.2505@gmail.com" class="contact-pill">
+                                <i class="bi bi-envelope-fill text-primary"></i>
+                                <span>joaooliveiradev.2505@gmail.com</span>
+                            </a>
+                            <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%20Gabriel%21%20Tudo%20bem%3F" target="_blank" rel="noopener" class="contact-pill">
+                                <i class="bi bi-telephone-fill text-success"></i>
+                                <span>+55 (11) 98855-5937</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/joao-gabriel-santana-de-oliveira-273a2a220" target="_blank" rel="noopener" class="contact-pill">
+                                <i class="bi bi-linkedin text-primary"></i>
+                                <span>linkedin.com/in/joao-gabriel-santana-de-oliveira-273a2a220</span>
+                            </a>
+                            <a href="https://github.com/joaooliveiradev2505" target="_blank" rel="noopener" class="contact-pill">
+                                <i class="bi bi-github text-slate-800"></i>
+                                <span>github.com/joaooliveiradev2505</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Resumo de Diferenciais de Engenharia -->
+                    <div class="col-lg-4">
+                        <div class="card-clean-elevated p-4">
+                            <h2 class="h6 fw-bold text-uppercase text-slate-500 mb-3">
+                                <i class="bi bi-shield-check text-primary me-1"></i> Diferenciais de Produção
+                            </h2>
+                            <ul class="list-unstyled d-grid gap-3 mb-0 small">
+                                <li class="d-flex gap-2">
+                                    <i class="bi bi-database-fill-gear text-primary fs-5"></i>
+                                    <div>
+                                        <strong class="text-slate-900 d-block">Arquitetura Multi-Database & Tuning</strong>
+                                        <span class="text-slate-600">MySQL e Oracle com processamento em <em>chunks</em>, <em>dirty checking</em> e migrations seguras.</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <i class="bi bi-mic-fill text-primary fs-5"></i>
+                                    <div>
+                                        <strong class="text-slate-900 d-block">IA de Voz & Mensageria em Escala</strong>
+                                        <span class="text-slate-600">Integrações REST/Webhooks com Vapi, LiveKit, OpenAI API, WhatsApp Business API e Olos/Voll.</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <i class="bi bi-globe2 text-primary fs-5"></i>
+                                    <div>
+                                        <strong class="text-slate-900 d-block">Inglês Fluente & Compliance Global</strong>
+                                        <span class="text-slate-600">Experiência em rollout global SAP PM junto à matriz na Alemanha (KOSTAL) e RPA corporativo.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Matriz de Competências Técnicas -->
+        <section class="py-5 bg-white border-top border-bottom">
+            <div class="container">
+                <div class="mb-4">
+                    <span class="section-eyebrow">Stack Tecnológica</span>
+                    <h2 class="section-title mt-1">Principais Competências Técnicas</h2>
+                </div>
+
+                <div class="row g-4">
+                                            <div class="col-md-6 col-lg-3">
+                            <div class="skill-box-light p-4 h-100">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <span class="service-icon-box icon-primary">
+                                        <i class="bi bi-hdd-network"></i>
+                                    </span>
+                                    <h3 class="h6 fw-bold text-slate-900 mb-0">Backend &amp; Arquitetura</h3>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2">
+                                                                            <span class="tech-tag">PHP 8+ (Laravel / Eloquent ORM)</span>
+                                                                            <span class="tech-tag">Java 21 (Spring Boot)</span>
+                                                                            <span class="tech-tag">Spring Data JPA / Hibernate</span>
+                                                                            <span class="tech-tag">Python</span>
+                                                                            <span class="tech-tag">Node.js</span>
+                                                                            <span class="tech-tag">RESTful APIs &amp; OpenAPI/Swagger</span>
+                                                                            <span class="tech-tag">Autenticação Stateless (Bearer / BCrypt)</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-6 col-lg-3">
+                            <div class="skill-box-light p-4 h-100">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <span class="service-icon-box icon-primary">
+                                        <i class="bi bi-database-check"></i>
+                                    </span>
+                                    <h3 class="h6 fw-bold text-slate-900 mb-0">Bancos de Dados &amp; Performance</h3>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2">
+                                                                            <span class="tech-tag">MySQL (Multi-Database &amp; Schemas)</span>
+                                                                            <span class="tech-tag">Oracle Database</span>
+                                                                            <span class="tech-tag">Modelagem Relacional (1:N)</span>
+                                                                            <span class="tech-tag">Processamento em Lotes (Chunks)</span>
+                                                                            <span class="tech-tag">Dirty Checking &amp; Memory Tuning</span>
+                                                                            <span class="tech-tag">Migrations Seguras &amp; Query Tuning</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-6 col-lg-3">
+                            <div class="skill-box-light p-4 h-100">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <span class="service-icon-box icon-primary">
+                                        <i class="bi bi-cpu"></i>
+                                    </span>
+                                    <h3 class="h6 fw-bold text-slate-900 mb-0">IA, Voz, Mensageria &amp; CRM</h3>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2">
+                                                                            <span class="tech-tag">OpenAI API</span>
+                                                                            <span class="tech-tag">Vapi &amp; LiveKit (Voice AI Agents)</span>
+                                                                            <span class="tech-tag">WhatsApp Business API (Dialog360/Meta)</span>
+                                                                            <span class="tech-tag">RCS / SMS (Unipix)</span>
+                                                                            <span class="tech-tag">Discadores Automáticos (Olos / Voll)</span>
+                                                                            <span class="tech-tag">Webhooks Dinâmicos &amp; Rotinas de Fallback</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-6 col-lg-3">
+                            <div class="skill-box-light p-4 h-100">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <span class="service-icon-box icon-primary">
+                                        <i class="bi bi-code-square"></i>
+                                    </span>
+                                    <h3 class="h6 fw-bold text-slate-900 mb-0">Frontend, Qualidade &amp; DevOps</h3>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2">
+                                                                            <span class="tech-tag">React.js (React 19) &amp; Vite</span>
+                                                                            <span class="tech-tag">JavaScript (ES6+) &amp; jQuery</span>
+                                                                            <span class="tech-tag">HTML5, CSS3 &amp; Bootstrap 5</span>
+                                                                            <span class="tech-tag">JUnit 5 &amp; Mockito</span>
+                                                                            <span class="tech-tag">AWS S3 &amp; Linux</span>
+                                                                            <span class="tech-tag">Git/GitHub, Maven &amp; Laravel Artisan/Cron</span>
+                                                                    </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </section>
+
+        <!-- Experiência Profissional & Projeto em Destaque -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Coluna Experiência -->
+                    <div class="col-lg-7">
+                        <span class="section-eyebrow">Trajetória Corporativa</span>
+                        <h2 class="section-title mt-1 mb-4">Experiência Profissional</h2>
+
+                        <div class="timeline-light">
+                                                            <div class="timeline-item-light p-4 mb-4">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                                        <div>
+                                            <h3 class="h5 fw-bold text-slate-900 mb-0">Desenvolvedor Full-Stack (PHP / Laravel)</h3>
+                                            <span class="fw-semibold text-primary">Pés Sem Dor</span>
+                                            <span class="text-slate-500 small"> • São Paulo / SP</span>
+                                        </div>
+                                        <span class="badge-pill-soft">julho de 2026 – novembro de 2026</span>
+                                    </div>
+
+                                    <ul class="text-slate-600 small ps-3 mb-3 d-grid gap-2">
+                                                                                    <li>Arquitetura &amp; Sistemas Corporativos: Desenvolvimento e manutenção evolutiva do ERP/CRM proprietário e da plataforma de avaliação clínica em arquitetura multi-database utilizando PHP (Laravel), MySQL, JavaScript/jQuery e Bootstrap.</li>
+                                                                                    <li>Integrações com IA &amp; Agentes de Voz: Construção de integrações via Webhooks e APIs RESTful com plataformas de voz baseadas em IA (Vapi, LiveKit) e OpenAI API, estruturando tratamento de payloads dinâmicos, rotinas de fallback e relatórios analíticos de chamadas.</li>
+                                                                                    <li>Automação de Mensageria &amp; CRM: Implementação de integrações com WhatsApp Business API (Dialog360/Meta) e webservices RCS/SMS (Unipix), criando rotinas agendadas (Laravel Artisan/Cron) para sincronização de templates HSM e geração automatizada de leads.</li>
+                                                                                    <li>Integração de Discadores &amp; Pipelines de Vendas: Evolução do pipeline de distribuição de leads integrando Chatbot, CRM e discadores automáticos (Olos/Voll), aplicando modelagem relacional (1:N) e filtros avançados.</li>
+                                                                                    <li>Otimização &amp; Performance de Dados: Redução de consumo de memória e operações de escrita em banco por meio do processamento de grandes volumes em lotes (chunks), aplicação de dirty checking e migrations seguras.</li>
+                                                                                    <li>Dashboards, BI &amp; Módulos Operacionais: Gestão de disponibilidade de agenda integrada ao AWS S3, relatórios gerenciais/KPIs automatizados e evolução do módulo clínico de vetorização/desenho de palmilhas.</li>
+                                                                            </ul>
+
+                                    <div class="d-flex flex-wrap gap-1">
+                                                                                    <span class="tech-tag-sm">PHP</span>
+                                                                                    <span class="tech-tag-sm">Laravel</span>
+                                                                                    <span class="tech-tag-sm">MySQL Multi-DB</span>
+                                                                                    <span class="tech-tag-sm">Vapi</span>
+                                                                                    <span class="tech-tag-sm">LiveKit</span>
+                                                                                    <span class="tech-tag-sm">OpenAI API</span>
+                                                                                    <span class="tech-tag-sm">WhatsApp API</span>
+                                                                                    <span class="tech-tag-sm">AWS S3</span>
+                                                                                    <span class="tech-tag-sm">Olos/Voll</span>
+                                                                            </div>
+                                </div>
+                                                            <div class="timeline-item-light p-4 mb-4">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                                        <div>
+                                            <h3 class="h5 fw-bold text-slate-900 mb-0">Assistente SAP SD / Desenvolvedor de Soluções &amp; RPA</h3>
+                                            <span class="fw-semibold text-primary">KOSTAL Brasil</span>
+                                            <span class="text-slate-500 small"> • São Bernardo do Campo / SP</span>
+                                        </div>
+                                        <span class="badge-pill-soft">Outubro de 2023 – Março de 2025</span>
+                                    </div>
+
+                                    <ul class="text-slate-600 small ps-3 mb-3 d-grid gap-2">
+                                                                                    <li>Engenharia de Soluções &amp; RPA em Ambiente Restrito: Projetei e implementei automações de processos (RPA) para as divisões de Financeiro, Controladoria, RH, Qualidade e Produção em Python, VBA e infraestrutura nativa sob normas globais de compliance de TI.</li>
+                                                                                    <li>Rollout Internacional SAP PM: Colaborei no projeto de rollout global do módulo SAP PM junto à matriz na Alemanha (em inglês), atuando no levantamento de requisitos técnicos, migração e validação de dados de ativos industriais.</li>
+                                                                            </ul>
+
+                                    <div class="d-flex flex-wrap gap-1">
+                                                                                    <span class="tech-tag-sm">Python</span>
+                                                                                    <span class="tech-tag-sm">VBA</span>
+                                                                                    <span class="tech-tag-sm">RPA</span>
+                                                                                    <span class="tech-tag-sm">SAP SD / PM</span>
+                                                                                    <span class="tech-tag-sm">Compliance TI</span>
+                                                                                    <span class="tech-tag-sm">Rollout Internacional (EN)</span>
+                                                                            </div>
+                                </div>
+                                                            <div class="timeline-item-light p-4 mb-4">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                                        <div>
+                                            <h3 class="h5 fw-bold text-slate-900 mb-0">Estagiário de TI</h3>
+                                            <span class="fw-semibold text-primary">KOSTAL Brasil</span>
+                                            <span class="text-slate-500 small"> • São Bernardo do Campo / SP</span>
+                                        </div>
+                                        <span class="badge-pill-soft">Fevereiro de 2023 – Outubro de 2023</span>
+                                    </div>
+
+                                    <ul class="text-slate-600 small ps-3 mb-3 d-grid gap-2">
+                                                                                    <li>Suporte Técnico &amp; Operações: Atendimento corporativo via Service Desk, monitoramento de operações com EDI (Electronic Data Interchange) e suporte funcional ao ecossistema SAP.</li>
+                                                                            </ul>
+
+                                    <div class="d-flex flex-wrap gap-1">
+                                                                                    <span class="tech-tag-sm">Service Desk</span>
+                                                                                    <span class="tech-tag-sm">EDI</span>
+                                                                                    <span class="tech-tag-sm">SAP</span>
+                                                                            </div>
+                                </div>
+                                                    </div>
+                    </div>
+
+                    <!-- Coluna Projetos em Destaque & Formação -->
+                    <div class="col-lg-5">
+                        <span class="section-eyebrow">Engenharia & Código</span>
+                        <h2 class="section-title mt-1 mb-4">Projeto em Destaque</h2>
+
+                                                    <div class="card-clean-elevated p-4 mb-4">
+                                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                    <div>
+                                        <span class="badge bg-primary-subtle text-primary fw-semibold mb-1">Java 21 + Spring Boot + Oracle + React 19</span>
+                                        <h3 class="h5 fw-bold text-slate-900 mb-0">Fintech Opportunity (The Opportunity Ledger)</h3>
+                                        <p class="text-slate-500 small mb-2">Plataforma Full-Stack &amp; IA Preditiva de Saúde Financeira</p>
+                                    </div>
+                                </div>
+
+                                <ul class="text-slate-600 small ps-3 mb-3 d-grid gap-2">
+                                                                            <li>Arquitetura Backend &amp; Persistência Oracle: API RESTful em Java 21 e Spring Boot (26 endpoints documentados via Swagger/OpenAPI) integrada ao Oracle Database via Spring Data JPA/Hibernate, com autenticação stateless, BCrypt e controle transacional.</li>
+                                                                            <li>Motor de Custo de Oportunidade &amp; IA (Java + Python): Algoritmos financeiros de Orçamento Reverso, projeção de juros compostos em tempo real e consultor preditivo de saúde financeira em Python, validados com JUnit 5 e Mockito.</li>
+                                                                            <li>Frontend Responsivo (React 19 + Bootstrap 5): SPA responsiva (Mobile/Desktop) com componentes interativos drag-and-drop e assistente virtual integrado.</li>
+                                                                    </ul>
+
+                                <div class="d-flex flex-wrap gap-1 mb-3">
+                                                                            <span class="tech-tag-sm">Java 21</span>
+                                                                            <span class="tech-tag-sm">Spring Boot</span>
+                                                                            <span class="tech-tag-sm">Oracle Database</span>
+                                                                            <span class="tech-tag-sm">Spring Data JPA</span>
+                                                                            <span class="tech-tag-sm">Python (IA)</span>
+                                                                            <span class="tech-tag-sm">React 19</span>
+                                                                            <span class="tech-tag-sm">Bootstrap 5</span>
+                                                                            <span class="tech-tag-sm">JUnit 5 &amp; Mockito</span>
+                                                                            <span class="tech-tag-sm">Swagger/OpenAPI</span>
+                                                                    </div>
+
+                                <a href="https://github.com/joaooliveiradev2505/FintechFiap"
+                                   target="_blank"
+                                   rel="noopener"
+                                   class="btn btn-outline-primary-clean btn-sm w-100 fw-semibold">
+                                    <i class="bi bi-github me-1"></i> Ver Repositório no GitHub (github.com/joaooliveiradev2505/FintechFiap)
+                                </a>
+                            </div>
+                        
+                        <!-- Formação Acadêmica & Idiomas -->
+                        <div class="card-clean-elevated p-4">
+                            <h3 class="h6 fw-bold text-uppercase text-slate-500 mb-3">
+                                <i class="bi bi-mortarboard-fill text-primary me-1"></i> Formação Acadêmica & Idiomas
+                            </h3>
+
+                                                            <div class="mb-3 pb-3 border-bottom">
+                                    <div class="d-flex justify-content-between align-items-start gap-2">
+                                        <strong class="text-slate-900 small">Tecnólogo (CST) em Análise e Desenvolvimento de Sistemas</strong>
+                                        <span class="badge-pill-soft">2026 – 2028 (Cursando)</span>
+                                    </div>
+                                    <div class="text-primary small fw-semibold">FIAP</div>
+                                    <p class="text-slate-600 small mb-0 mt-1">Foco em arquitetura de sistemas modernos, Java Spring Boot, banco de dados Oracle, React e Inteligência Artificial.</p>
+                                </div>
+                                                            <div class="mb-3 pb-3 border-bottom">
+                                    <div class="d-flex justify-content-between align-items-start gap-2">
+                                        <strong class="text-slate-900 small">Bacharelado em Engenharia de Computação (4 anos cursados)</strong>
+                                        <span class="badge-pill-soft">2021 – 2025</span>
+                                    </div>
+                                    <div class="text-primary small fw-semibold">Universidade Anhembi Morumbi / Fundação Santo André</div>
+                                    <p class="text-slate-600 small mb-0 mt-1">Sólida formação analítica em algoritmos, estruturas de dados, engenharia de software e sistemas computacionais.</p>
+                                </div>
+                            
+                            <div>
+                                <strong class="text-slate-900 small d-block mb-2">Idiomas</strong>
+                                                                    <div class="small text-slate-600 mb-1">
+                                        <i class="bi bi-translate text-primary me-1"></i>
+                                        <strong>Português:</strong> Nativo                                    </div>
+                                                                    <div class="small text-slate-600 mb-1">
+                                        <i class="bi bi-translate text-primary me-1"></i>
+                                        <strong>Inglês:</strong> Avançado / Fluente (Comunicação técnica e condução de projetos com times internacionais)                                    </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Adaptativo (Respeita a regra de contatos de acordo com a aba ativa) -->
+    <footer class="footer-light py-4 border-top bg-white">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <div>
+                <span class="fw-bold text-slate-900">João Gabriel Santana de Oliveira</span>
+                <span class="text-slate-500 small d-block">
+                    Santo André, SP — Região do ABC &amp; Grande SP                </span>
+            </div>
+
+            <!-- Links de Rodapé para Visão Empresas (Apenas WhatsApp e E-mail) -->
+            <div class="footer-contacts-business d-flex flex-wrap align-items-center gap-3 small">
+                <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Vi%20sua%20p%C3%A1gina%20e%20gostaria%20de%20conversar."
+                   target="_blank"
+                   rel="noopener"
+                   class="text-decoration-none text-slate-700 fw-medium">
+                    <i class="bi bi-whatsapp text-success me-1"></i>+55 (11) 98855-5937                </a>
+                <a href="mailto:joaooliveiradev.2505@gmail.com"
+                   class="text-decoration-none text-slate-700 fw-medium">
+                    <i class="bi bi-envelope-fill text-primary me-1"></i>joaooliveiradev.2505@gmail.com                </a>
+                <button type="button"
+                        class="btn btn-link btn-sm text-decoration-none p-0 fw-semibold"
+                        data-bs-toggle="modal"
+                        data-bs-target="#qrCodeModal">
+                    <i class="bi bi-qr-code me-1"></i>Exibir QR Code
+                </button>
+            </div>
+
+            <!-- Links de Rodapé para Visão Recrutadores (Todos os contatos) -->
+            <div class="footer-contacts-recruiter d-none flex-wrap align-items-center gap-3 small">
+                <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%20Gabriel%21" target="_blank" rel="noopener" class="text-decoration-none text-slate-700">
+                    <i class="bi bi-whatsapp text-success me-1"></i>+55 (11) 98855-5937                </a>
+                <a href="mailto:joaooliveiradev.2505@gmail.com" class="text-decoration-none text-slate-700">
+                    <i class="bi bi-envelope-fill text-primary me-1"></i>joaooliveiradev.2505@gmail.com                </a>
+                <a href="https://www.linkedin.com/in/joao-gabriel-santana-de-oliveira-273a2a220" target="_blank" rel="noopener" class="text-decoration-none text-slate-700">
+                    <i class="bi bi-linkedin text-primary me-1"></i>LinkedIn
+                </a>
+                <a href="https://github.com/joaooliveiradev2505" target="_blank" rel="noopener" class="text-decoration-none text-slate-700">
+                    <i class="bi bi-github me-1"></i>GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante de WhatsApp + QR Code (Mobile Friendly) -->
+    <div class="floating-actions">
+        <button type="button"
+                class="fab-qr shadow-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#qrCodeModal"
+                title="Mostrar QR Code">
+            <i class="bi bi-qr-code"></i>
+        </button>
+        <a href="https://wa.me/5511988555937?text=Ol%C3%A1%20Jo%C3%A3o%21%20Vi%20sua%20p%C3%A1gina%20e%20gostaria%20de%20conversar."
+           id="floatingWaBtn"
+           target="_blank"
+           rel="noopener"
+           class="fab-whatsapp shadow"
+           title="Chamar no WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+            <span class="fab-label">Falar no WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- =======================================================================
+         MODAL DE QR CODE & CARTÃO DIGITAL (PRONTO PARA IMPRESSÃO OU TELA)
+         ======================================================================= -->
+    <div class="modal fade" id="qrCodeModal" tabindex="-1" aria-labelledby="qrCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-clean-light">
+                <div class="modal-header border-0 pb-0">
+                    <div>
+                        <span class="badge bg-primary-subtle text-primary fw-semibold mb-1">Acesso Rápido via Câmera</span>
+                        <h2 class="modal-title h5 fw-bold text-slate-900" id="qrCodeModalLabel">
+                            QR Code — João Gabriel                        </h2>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body text-center pt-3">
+                    <!-- Escolha do destino do QR Code -->
+                    <div class="btn-group w-100 mb-3" role="group" aria-label="Tipo de QR Code">
+                        <button type="button" class="btn btn-outline-primary btn-sm active" data-qr-target="business">
+                            🏢 Página Empresas
+                        </button>
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-qr-target="whatsapp">
+                            💬 Direto WhatsApp
+                        </button>
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-qr-target="recruiter">
+                            💻 Portfólio Recrutador
+                        </button>
+                    </div>
+
+                    <!-- Área do Cartão Imprimível -->
+                    <div id="printableQrCard" class="qr-card-box p-4 mx-auto">
+                        <div class="fw-bold text-slate-900 mb-1">João Gabriel</div>
+                        <div id="qrCardSubtitle" class="text-primary small fw-semibold mb-3">
+                            Soluções em Automação, IA & Sistemas Web
+                        </div>
+
+                        <div id="qrCanvasContainer" class="qr-canvas-wrapper mx-auto mb-3"></div>
+
+                        <div class="small text-slate-600 mb-1">
+                            <i class="bi bi-whatsapp text-success me-1"></i>+55 (11) 98855-5937                        </div>
+                        <div class="small text-slate-500">
+                            <i class="bi bi-envelope me-1"></i>joaooliveiradev.2505@gmail.com                        </div>
+                    </div>
+
+                    <!-- URL Editável (caso queira gerar o QR Code para o domínio final antes mesmo de publicar) -->
+                    <div class="mt-3 text-start">
+                        <label for="qrCustomUrl" class="form-label small fw-semibold text-slate-700 mb-1">
+                            Link codificado no QR Code (você pode editar para o seu domínio final):
+                        </label>
+                        <div class="input-group input-group-sm">
+                            <input type="text" id="qrCustomUrl" class="form-control form-control-light" value="">
+                            <button class="btn btn-outline-secondary" type="button" id="copyQrLinkBtn" title="Copiar Link">
+                                <i class="bi bi-clipboard"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer border-0 pt-0 d-flex justify-content-between">
+                    <a href="?download=vcard" class="btn btn-outline-slate btn-sm">
+                        <i class="bi bi-person-vcard me-1"></i> Baixar vCard (.vcf)
+                    </a>
+                    <button type="button" id="downloadQrPngBtn" class="btn btn-primary-gradient btn-sm">
+                        <i class="bi bi-download me-1"></i> Baixar QR Code (PNG)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & QRCode.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
