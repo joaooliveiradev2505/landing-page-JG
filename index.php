@@ -27,7 +27,7 @@ if (isset($_GET['download']) && $_GET['download'] === 'vcard') {
 }
 
 // Endpoint AJAX para o Simulador / Pré-Orçamento Rápido (salva log local opcional e retorna link do WhatsApp formatado)
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_GET['action']) && $_GET['action'] === 'quick_quote') {
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST' && isset($_GET['action']) && $_GET['action'] === 'quick_quote') {
     header('Content-Type: application/json; charset=utf-8');
 
     $rawInput = file_get_contents('php://input');
